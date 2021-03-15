@@ -2,8 +2,10 @@
 @import './utils/mixins';
 @import './utils/animation';
 @import './components/common/base';
+@import './components/common/link';
 @import './components/common/button';
 @import './components/common/container';
+@import './components/common/header';
 @import './components/common/logo';
 @import './components/common/hero';
 @import './components/common/visually-hidden';
@@ -17,3 +19,6 @@
 @import './components/common/footer';
 @import './components/common/slogan';
 @import './components/studio/modal';
+@import './components/portfolio/filter';
+@import './components/portfolio/work-section';
+@import './components/portfolio/portfolio-list'
