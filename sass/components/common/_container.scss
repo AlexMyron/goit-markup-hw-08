@@ -1,10 +1,15 @@
 .container {
+  outline: 1px solid teal;
   padding: 60px 15px;
   margin: 0 auto;
 
 
   @media screen and (min-width: 480px) {
     width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
 
   &--page-header {
@@ -22,5 +27,4 @@
   &--work-section {
     padding-bottom: 60px;
   }
-  
 }
