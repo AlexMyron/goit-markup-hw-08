@@ -1,0 +1,16 @@
+.hero {
+  background-color: $hero-footer-bg-color;
+}
+
+.hero__title {
+  color: $white-color;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+}

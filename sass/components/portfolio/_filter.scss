@@ -1,0 +1,10 @@
+.filter {
+  @include centeredFlex;
+  margin-bottom: 50px;
+}
+
+.filter__item {
+  & + & {
+    margin-left: 8px;
+  }
+}

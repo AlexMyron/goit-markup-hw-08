@@ -1,0 +1,26 @@
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients__item {
+  flex-basis: calc((100% - 2 * 30px ) / 2);
+  margin: 15px;
+}
+
+.clients__link {
+  @include centeredFlex(flex);  
+  height: 90px;
+  padding: 0;
+  border: 1px solid $social-link-color;
+  border-radius: 4px;
+
+  color: $social-link-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}

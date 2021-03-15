@@ -1,0 +1,23 @@
+.container {
+  padding: 60px 15px;
+  margin: 0 auto;
+
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  &--page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--hero {
+    padding: 118px 60px;
+  }
+
+  
+}

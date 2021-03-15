@@ -1,0 +1,65 @@
+.footer {
+  background-color: $hero-footer-bg-color;
+}
+
+.footer-contacts {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.address-list {
+  margin-top: 20px;
+}
+
+.address-list__map-link {
+  display: block;
+  margin-bottom: 8px;
+
+  color: $white-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.address-list__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.address-list__link {
+  
+  color: $contact-link-color;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+}
+
+//footer-form
+
+.footer-form {
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.footer-form__email {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 16px;
+
+  background-color: transparent;
+  border: 1px solid $sign-up-border-color;
+  border-radius: 4px;
+  color: $white-color;
+}
