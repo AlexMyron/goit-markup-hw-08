@@ -28,6 +28,10 @@
 .button--footer-form {
   display: inline-block;
   padding: 10px 29px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .button--modal {

@@ -1,3 +1,33 @@
 .work {
-  display: none;
+  @media screen and (max-width: 1199px) {
+    display: none;  
+  }
+}
+
+.work__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work__thumb {
+  position: relative;
+}
+
+.work__subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $white-color;
+  background-color: $subtitle-bg-color;
 }
