@@ -4,7 +4,7 @@
 }
 
 .page-header__wrapper {  
-  @media screen and (max-width: 767px) {
+  @include media-max (767) {
     display: none;
     padding-left: 40px;
     padding-top: 38px;
@@ -31,11 +31,8 @@
         padding-top: 10px;
         padding-bottom: 10px;
 
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.175;
+        @include font-silo (500, 40px, 1.175, 0.02em, null);
         text-align: left;
-        letter-spacing: 0.02em;
       } 
 
       & .header-contact__list {
@@ -49,22 +46,12 @@
         padding-top: 10px;
         padding-bottom: 10px;
 
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 1.176;
-        letter-spacing: 0.02em;
-
-        color: $accent-color;
+        @include font-silo (500, 34px, 1.176, 0.02em, $accent-color);
 
         &--email {
           margin-top: 12px;
 
-          font-weight: 500;
-          font-size: 24px;
-          line-height: 1.167;
-          letter-spacing: 0.02em;
-  
-          color: $primary-color;
+          @include font-silo (500, 24px, 1.167, 0.02em, $primary-color);
         }
       }
 
@@ -75,7 +62,7 @@
     }    
   }
 
-  @media screen and (min-width: 768px) {
+  @include media-min (768) {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -88,7 +75,7 @@
   flex-wrap: wrap;
   max-width: 357px;
 
-  @media screen and (min-width: 768px) {
+  @include media-min (768) {
     display: none;
   }
 }
@@ -98,25 +85,20 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-
-  color: $accent-color;
+  @include font-silo (500, 18px, 1.22, 0.02em, $accent-color);
 
   text-decoration: none;
 }
 
 .nav-menu {
-  @media screen and (min-width: 768px) {
+  @include media-min (768) {
     display: flex;
   }
 }
 
 .nav-menu__item {
-  @media screen and (min-width: 768px) {
-    &+ & {
+  @include media-min (768) {
+    & + & {
       margin-left: 50px;
     }
   }
@@ -126,31 +108,28 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font-silo (500, 14px, 1.14, 0.02em, null);
 }
 
 .header-contact__list {
-  @media screen and (min-width: 768px) {
+  @include media-min (768) {
     margin-left: 84px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include media-min (1200) {
     display: flex;
     margin-left: 305px;
   }
 }
 
 .header-contact__item {  
-  @media screen and (max-width: 1199px) {
+  @include media-max (1199) {
     &:not(:last-child) {
       margin-bottom: 10px;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @include media-min (1200) {
     & + & {
       margin-left: 30px;
     }
@@ -161,12 +140,8 @@
   display: flex;
   align-items: center;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font-silo (500, 14px, 1.14, 0.02em, $primary-color);
   text-decoration: none;
-  color: $primary-color;
 
   transition: color $duration $timing-function;
 
@@ -204,7 +179,7 @@
   right: 15px;
   z-index: 3;
 
-  @media screen and (max-width: 767px) {
+  @include media-max (767) {
     display: block; 
     box-sizing: content-box;
     width: 24px;

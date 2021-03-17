@@ -1,5 +1,5 @@
 .features__list {
-  @media screen and (min-width: 768px) {
+  @include media-min (768) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -8,18 +8,18 @@
 
 
 .features__item {
-  @media screen and (max-width: 767px) {  
+  @include media-max (767) {  
     &:not(:last-child) {
       margin-bottom: 30px;
-  }
+    }
   }
 
-  @media screen and (min-width: 768px) {
+  @include media-min (768) {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include media-min (1200) {
     flex-basis: calc((100% - 4 * 30px) / 4);
     margin: 15px;
   }
@@ -30,22 +30,17 @@
 
   color: $secondary-color;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;  
+  @include font-silo (700, 14px, 1.14, 0.03em, null);
   text-transform: uppercase;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @include media-min(768) {
     text-align: left;
   }
 }
 
 .features__text {
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
+  @include font-silo (null, 14px, 1.714, 0.03em, null);
   text-align: left;
 }
 

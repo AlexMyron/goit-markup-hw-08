@@ -1,12 +1,9 @@
 .subtitle {
   margin-bottom: 30px;
 
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.171;
-  letter-spacing: 0.03em;
+  @include font-silo (700, 28px, 1.171, 0.03em, null);
 
-  @media screen and (min-width: 1200px) {
+  @include media-min (1200) {
     margin-bottom: 50px;
 
     font-size: 36px;

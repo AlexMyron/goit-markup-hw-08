@@ -24,7 +24,7 @@
   background-color: $main-body-bg-color;
   padding: 40px;
   
-  @media screen and (min-width: 450px) {
+  @include media-min (450) {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -71,13 +71,8 @@
   display: block;
   margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font-silo (700, 20px, 1.15, 0.03em, $secondary-color);
   text-align: center;
-  letter-spacing: 0.03em;
-
-  color: $secondary-color;
 }
 
 .modal-form__field {
@@ -131,9 +126,7 @@
     padding-left: 24px;
     margin-bottom: 0;
 
-    font-size: 12px;
-    line-height: 1.71;
-    letter-spacing: 0.02em;
+    @include font-silo (null, 12px, 1.71, 0.02em, null);
 
     cursor: pointer;
   }

@@ -11,7 +11,7 @@
 
   color: $white-color;
 
-  @media screen and (min-width: 1200px) {
+  @include media-min (1200) {
     &--lefted {
       text-align: left;
     }    
