@@ -11,6 +11,8 @@
     padding-bottom: 16px;
     background-color: $main-body-bg-color;
 
+    // === .page-header__wrapper.is-open ===
+
     &.is-open {
       position: fixed;
       top: 0;
@@ -19,6 +21,7 @@
       height: 100%;
       display: block;
       overflow-y: scroll;
+      z-index: 2;
   
       & .nav-menu__item:not(:last-child) {
         margin-bottom: 12px;
@@ -89,12 +92,6 @@
     display: none;
   }
 }
-
-// .burger-contacts__item {
-//   & + & {
-//     margin-left: 20px;
-//   }
-// }
 
 .burger-contacts__link {
   display: block;
@@ -200,11 +197,12 @@
   }
 }
 
-// menu-button
+// == menu-button ==
 .menu-button {
   position: absolute;
   top: 10px;
   right: 15px;
+  z-index: 3;
 
   @media screen and (max-width: 767px) {
     display: block; 

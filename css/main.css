@@ -221,7 +221,6 @@ h2, h3 {
 }
 
 .container {
-  outline: 1px solid teal;
   padding: 60px 15px;
   margin: 0 auto;
 }
@@ -325,6 +324,7 @@ h2, h3 {
     height: 100%;
     display: block;
     overflow-y: scroll;
+    z-index: 2;
   }
   .page-header__wrapper.is-open .nav-menu__item:not(:last-child) {
     margin-bottom: 12px;
@@ -512,6 +512,7 @@ h2, h3 {
   position: absolute;
   top: 10px;
   right: 15px;
+  z-index: 3;
   display: none;
 }
 
