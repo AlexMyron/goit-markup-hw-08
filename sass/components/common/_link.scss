@@ -31,8 +31,14 @@
     background-color: $accent-color;
 
     transition: transform calc(#{$duration} * 2) $timing-function;
+
+    .page-header__wrapper.is-open & {
+      display: none;
+    }
   }  
 }
+
+
 
 .link--current:hover::after {
   transform: scaleX(1.5);
