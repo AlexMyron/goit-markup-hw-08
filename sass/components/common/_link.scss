@@ -32,13 +32,11 @@
 
     transition: transform calc(#{$duration} * 2) $timing-function;
 
-    .page-header__wrapper.is-open & {
+    .burger-menu & {
       display: none;
     }
   }  
 }
-
-
 
 .link--current:hover::after {
   transform: scaleX(1.5);

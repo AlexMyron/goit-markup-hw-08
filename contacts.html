@@ -15,12 +15,12 @@
       <header class="page-header">
         <div class="container container--page-header">
           <a class="logo logo--header" href="./index.html"><span class="logo--accent-color">Web</span>Studio</a>
-          <div class="page-header__wrapper" data-menu>
-            <nav class="page-header__nav">
+          <div class="page-header__wrapper">
+            <nav>
               <ul class="nav-menu">
-                <li class="nav-menu__item"><a class="nav-menu__link link" href="./index.html" title="Студия">Студия</a></li>
+                <li class="nav-menu__item"><a class="nav-menu__link link link--current" href="./index.html" title="Студия">Студия</a></li>
                 <li class="nav-menu__item"><a class="nav-menu__link link" href="./portfolio.html" title="Портфолио">Портфолио</a></li>
-                <li class="nav-menu__item"><a class="nav-menu__link link link--current" href="./contacts.html" title="Контакты">Контакты</a></li>
+                <li class="nav-menu__item"><a class="nav-menu__link link" href="./contacts.html" title="Контакты">Контакты</a></li>
               </ul>
             </nav>      
             <ul class="header-contact__list">
@@ -38,19 +38,48 @@
                   </svg>+38 096 111 11 11</a>
               </li>
             </ul>
-            <ul class="burger-contacts">
-              <li class="burger-contacts__item"><a href="" class="burger-contacts__link">Instagramm</a></li>
-              <li class="burger-contacts__item"><a href="" class="burger-contacts__link">Twitter</a></li>
-              <li class="burger-contacts__item"><a href="" class="burger-contacts__link">Facebook</a></li>
-              <li class="burger-contacts__item"><a href="" class="burger-contacts__link">Linkedin</a></li>
-            </ul>
           </div>
-          <button class="menu-button" data-menu-button data-menu>
+          <button class="menu-button js-open-menu">
             <svg class="menu-button__icon icon">
-              <use class="menu-button__icon--burger" href="./images/icons.svg#icon-burger" width="24" height="16"></use>
-              <use class="menu-button__icon--cross" href="./images/icons.svg#icon-close-burger" width="24" height="18"></use>
+              <use class="menu-button__icon--open" href="./images/icons.svg#icon-burger" width="24" height="16"></use>
             </svg>
           </button>
+  
+          <!-- Burger-menu -->
+          <div class="burger-menu js-menu-container">
+            <button class="menu-button js-close-menu">
+              <svg class="menu-button__icon icon">
+                <use class="menu-button__icon--close" href="./images/icons.svg#icon-close-burger" width="24" height="18"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="burger-menu__nav">
+                <li class="burger-menu__item"><a class="burger-menu__link link" href="./index.html" title="Студия">Студия</a></li>
+                <li class="burger-menu__item"><a class="burger-menu__link link" href="./portfolio.html" title="Портфолио">Портфолио</a></li>
+                <li class="burger-menu__item"><a class="burger-menu__link link link--current" href="./contacts.html" title="Контакты">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="burger-contacts__wrapper">
+              <ul class="burger-contacts__list">
+                <li class="burger-contacts__item">
+                  <a class="burger-contacts__link burger-contacts__link--email" href="mailto:info@devstudio.com" title="info@devstudio.com">
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="burger-contacts__item">
+                  <a class="burger-contacts__link" href="tel:+380961111111" title="+38 096 111 11 11">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+              <ul class="burger-social">
+                <li class="burger-social__item"><a href="" class="burger-social__link">Instagramm</a></li>
+                <li class="burger-social__item"><a href="" class="burger-social__link">Twitter</a></li>
+                <li class="burger-social__item"><a href="" class="burger-social__link">Facebook</a></li>
+                <li class="burger-social__item"><a href="" class="burger-social__link">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>            
         </div>
       </header>
     <main>
