@@ -2,18 +2,19 @@
   // outline: 1px solid teal;
   padding: 60px 15px;
   margin: 0 auto;
+  min-width: 320px;
 
 
   @include  media-min(480) {
-    width: 480px;
+    max-width: 480px;
   }
 
   @include  media-min(768) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @include  media-min(1200) {
-    width: 1200px;
+    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
