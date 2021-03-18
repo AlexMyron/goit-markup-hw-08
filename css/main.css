@@ -309,13 +309,13 @@ h2, h3 {
   border-bottom: 1px solid #ECECEC;
 }
 
+.page-header__wrapper {
+  background-color: #ffffff;
+}
+
 @media screen and (max-width: 767px) {
   .page-header__wrapper {
     display: none;
-    padding-left: 40px;
-    padding-top: 38px;
-    padding-bottom: 16px;
-    background-color: #ffffff;
   }
   .page-header__wrapper.is-open {
     position: fixed;
@@ -581,6 +581,7 @@ h2, h3 {
 
 .hero {
   max-width: 1600px;
+  margin: 0 auto;
   background-color: #2F303A;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../././images/mobile-hero.jpg);
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../././images/mobile-hero.jpg);

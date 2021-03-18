@@ -4,12 +4,12 @@
 }
 
 .page-header__wrapper {  
+  background-color: $main-body-bg-color;
   @include media-max (767) {
     display: none;
-    padding-left: 40px;
-    padding-top: 38px;
-    padding-bottom: 16px;
-    background-color: $main-body-bg-color;
+    // padding-left: 40px;
+    // padding-top: 38px;
+    // padding-bottom: 16px;
 
     // === .page-header__wrapper.is-open ===
 
