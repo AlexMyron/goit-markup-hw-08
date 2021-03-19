@@ -11,7 +11,7 @@
 
   color: $white-color;
 
-  @include media-min (1200) {
+  @include media-min (1200, 9999) {
     &--lefted {
       text-align: left;
     }    

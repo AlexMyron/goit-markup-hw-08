@@ -1,5 +1,5 @@
 .features__list {
-  @include media-min (768) {
+  @include media-min (768, 9999) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -14,12 +14,12 @@
     }
   }
 
-  @include media-min (768) {
+  @include media-min (768, 1199) {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 
-  @include media-min (1200) {
+  @include media-min (1200, 9999) {
     flex-basis: calc((100% - 4 * 30px) / 4);
     margin: 15px;
   }
@@ -34,7 +34,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  @include media-min(768) {
+  @include media-min(768, 9999) {
     text-align: left;
   }
 }

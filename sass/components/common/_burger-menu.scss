@@ -101,7 +101,7 @@
   }
 }
 
-@include media-min (768) {
+@include media-min (768, 9999) {
   .burger-menu {
     display: none;
   }

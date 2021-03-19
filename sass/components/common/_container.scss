@@ -4,15 +4,15 @@
   min-width: 320px;
 
 
-  @include  media-min(480) {
+  @include  media-min(480, 767) {
     max-width: 480px;
   }
 
-  @include  media-min(768) {
+  @include  media-min(768, 1199) {
     max-width: 768px;
   }
 
-  @include  media-min(1200) {
+  @include  media-min(1200, 9999) {
     max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -29,20 +29,20 @@
   &--hero {
     padding: 118px 60px;
 
-    @include media-min (1200) {
+    @include media-min (1200, 9999) {
       padding-top: 200px;
       padding-bottom: 200px;
     }
   }
 
   &--features {
-    @include media-min (1200) {
+    @include media-min (1200, 9999) {
       padding-bottom: 0;
     }
   }
 
   &--footer {
-    @include media-min (1200) {
+    @include media-min (1200, 9999) {
       display: flex;
       justify-content: space-between;
       padding-top: 60px;

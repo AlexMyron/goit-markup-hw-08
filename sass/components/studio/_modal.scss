@@ -24,7 +24,7 @@
   background-color: $main-body-bg-color;
   padding: 40px;
   
-  @include media-min (450) {
+  @include media-min (450, 9999) {
     position: absolute;
     top: 50%;
     left: 50%;

@@ -3,7 +3,7 @@
 }
 
 .team__list {
-  @include media-min (768) {
+  @include media-min (768, 9999) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -23,24 +23,25 @@
     }
   }
 
-  @include media-min (768) {
+  @include media-min (768, 1199) {
     margin: 15px;
     flex-basis: calc((100% - 2 * 30px) / 2);
   }
 
-  @include media-min (1200) {
+  @include media-min (1200, 9999) {
     flex-basis: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
   }
 }
 
 .team__thumb {
   height: 460px;
 
-  @include media-min (768) {
+  @include media-min (768, 1199) {
     height: 374px;
   }
 
-  @include media-min (1200) {
+  @include media-min (1200, 9999) {
     height: 260px;
   }
 }
