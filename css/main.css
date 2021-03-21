@@ -504,17 +504,21 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 357px;
+  }
+  .burger-social__item:not(:last-child) {
+    padding-right: 9px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .burger-social__item:not(:first-child) {
+    padding-left: 9px;
   }
   .burger-social__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;

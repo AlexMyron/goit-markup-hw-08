@@ -64,19 +64,31 @@
 
   .burger-social {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    max-width: 357px;
+  }
+
+  .burger-social__item {
+    &:not(:last-child) {
+      padding-right: 9px;
+      border-right: 1px solid $secondary-color-20;
+    }
+    
+    &:not(:first-child) {
+      padding-left: 9px;
+    }
   }
 
   .burger-social__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+
   
     @include font-silo (500, 18px, 1.22, 0.02em, $accent-color);
   
     text-decoration: none;
+
   }
   
   // == menu-button ==
