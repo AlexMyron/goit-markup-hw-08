@@ -510,15 +510,27 @@ h2, h3 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .burger-social__item:not(:last-child) {
-    padding-right: 9px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  .burger-social__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .burger-social__item:not(:first-child) {
-    padding-left: 9px;
+  .burger-social__item:not(:last-child)::after {
+    content: '';
+    height: 22px;
+    margin-left: 9px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .burger-social__item + .burger-social__item {
+    margin-left: 9px;
   }
   .burger-social__link {
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
