@@ -32,11 +32,11 @@
   overflow-y: auto;
   transform: translate(-50%, -50%); 
   
-  @include media-min (450, 767) {
+  @include media-max (1199) {
     max-width: 450px;  
   }  
 
-  @include media-min (768, 9999) {
+  @include media-min (1200, 9999) {
     max-width: 528px;  
   }
 }
