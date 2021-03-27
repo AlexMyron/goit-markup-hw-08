@@ -260,6 +260,12 @@ h2, h3 {
   padding-bottom: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .container--page-header {
+    position: relative;
+  }
+}
+
 .container--hero {
   padding: 118px 60px;
 }

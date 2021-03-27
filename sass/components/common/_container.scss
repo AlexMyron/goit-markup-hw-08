@@ -24,6 +24,10 @@
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
+
+    @include media-max (767) {
+      position: relative;
+    }
   }
 
   &--hero {
