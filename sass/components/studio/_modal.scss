@@ -132,10 +132,16 @@
     left: 0;
     padding-left: 24px;
     margin-bottom: 0;
-
-    @include font-silo (null, 12px, 1.71, 0.02em, null);
-
     cursor: pointer;
+
+    @include media-max (767) {
+      @include font-silo (null, 12px, 1.71, 0.03em, null);
+    }
+
+    @include media-min (768, 9999) {
+      @include font-silo (null, 14px, 1.714, 0.03em, null);
+      
+    }
   }
 }
 
